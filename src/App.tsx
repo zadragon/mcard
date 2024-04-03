@@ -1,9 +1,17 @@
-import React from 'react'
-import logo from './logo.svg'
+import { css } from '@emotion/react'
 import './App.css'
 
+const containerStyles = css`
+  background: hotpink;
+`
+
 function App() {
-  return <div className="App"></div>
+  console.log(process.env)
+  return (
+    <div className="App" css={containerStyles}>
+      asdf
+    </div>
+  )
 }
 
 export default App
